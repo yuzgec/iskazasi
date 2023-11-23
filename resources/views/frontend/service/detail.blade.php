@@ -11,7 +11,7 @@
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb d-block text-md-end breadcrumb-light">
                         <li><a href="{{ route('home') }}">ANASAYFA</a></li>
-                        <li><a href="{{ route('service') }}">ÇALIŞMA ALANLARIMIZ</a></li>
+                        <li><a href="{{ route('home') }}">Hizmetlerimiz</a></li>
                         <li class="active">{{ $Detail->title }}</li>
                     </ul>
                 </div>
@@ -28,27 +28,7 @@
                 @endif
                 {!!  $Detail->desc !!}
             </div>
-            <div class="col-lg-4 position-relative">
-                <aside class="sidebar" data-plugin-sticky="" data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 120}}">
 
-                    @include('frontend.layout.form')
-
-                    <div class="card border-0 border-radius-0 custom-box-shadow-1 px-2 ">
-                        <div class="card-body">
-                            <h3 class="text-transform-none font-weight-bold pb-3 mb-4">ÇALIŞMA ALANLARIMIZ</h3>
-                            <ul class="custom-list-style-1 list list-unstyled font-weight-bold">
-                                @foreach($Service->where('category', 1) as $item)
-                                <li>
-                                    <a  class="text-decoration-none text-color-dark text-color-hover-primary" href="{{ route('servicedetail' , $item->slug)}}" title="{{ $item->title }}">
-                                        <i class="icon-arrow-right icons"></i> {{ $item->title }}
-                                    </a>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-            </div>
         </div>
     </div>
 @endsection

@@ -337,20 +337,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="d-flex align-items-center mb-2">
-                        <span class="custom-line appear-animation" data-appear-animation="customLineAnimation" appear-animation-duration="1s"></span>
-                        <div class="overflow-hidden ms-3">
-                            <h2 class="text-color-dark font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight" data-appear-animation-delay="1000">İŞ KAZASI AVUKATI</h2>
-                        </div>
-                    </div>
+
+                </div>
+            </div>
+            <div class="row  justify-content-center mb-4">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+
+
                     <h3 class="text-color-dark font-weight-bold text-transform-none text-8 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">SIKÇA SORULAN SORULAR</h3>
                     <p class="mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
                         İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.
                     </p>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center mb-4">
-                <div class="col-lg-7 pe-lg-5 mb-5 mb-lg-0">
+
                     <div class="accordion custom-accordion-style-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" id="accordion1">
                         <div class="card card-default">
                             <div class="card-header" id="collapse1HeadingOne">
@@ -450,22 +448,99 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-9 col-lg-5 ps-sm-5">
-                    <div class="position-relative">
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}">
-                            <img src="img/demos/cleaning-services/generic/generic-4.jpg" class="img-fluid rounded-circle custom-box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200" alt="" />
-                        </div>
-                        <div class="position-absolute top-50pct left-50pct transform3dxy-n50" style="left: 25%;">
-                            <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}">
-                                <img src="img/demos/cleaning-services/generic/generic-3.jpg" class="img-fluid rounded-circle custom-box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400" alt="" />
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-6  ps-sm-5">
+
+                    <h3 class="text-color-dark font-weight-bold text-transform-none text-8 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">HANGİ İŞLERİ YAPAR</h3>
+                    <p class="mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+                        İş kazası avukatlarının gerçekleştirdiği temel işler ve görevler aşağıdaki başlıklar altında özetlenebilir:
+                    </p>
+                    <ol style="background: white;margin:10px">
+                        <li>
+                            <p><strong>Danışmanlık ve Bilgilendirme:</strong></p>
+
+                            <ul>
+                                <li>Müvekkilleri, iş kazaları ve ilgili hukuki süreçler hakkında bilgilendirme.</li>
+                                <li>Haklar, yükümlülükler ve olası tazminatlar konusunda danışmanlık yapma.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Durum Değerlendirme ve Strateji Belirleme:</strong></p>
+
+                            <ul>
+                                <li>Kazanın detaylarını inceleme ve hukuki bir strateji belirleme.</li>
+                                <li>Olası tazminat miktarını ve dava şansını değerlendirme.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Kaza Raporlaması ve Resmi İşlemler:</strong></p>
+
+                            <ul>
+                                <li>İş kazası raporlarının hazırlanması ve ilgili kurumlara sunulması.</li>
+                                <li>Gerekli resmi başvuruların ve evrak işlerinin yönetimi.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Tazminat Talepleri ve Müzakereler:</strong></p>
+
+                            <ul>
+                                <li>İş kazası sonucunda hak edilen tazminatlar için taleplerde bulunma.</li>
+                                <li>Sigorta şirketleri veya işverenlerle müzakereler yürütme.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Dava Takibi ve Temsil:</strong></p>
+
+                            <ul>
+                                <li>İş kazası davalarında müvekkili mahkemede temsil etme.</li>
+                                <li>Davanın her aşamasında müvekkilleri temsil etmek ve savunmak.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Delil Toplama ve Analiz:</strong></p>
+
+                            <ul>
+                                <li>Kazayla ilgili delillerin toplanması ve analizi.</li>
+                                <li>Tanık ifadeleri, medikal raporlar ve diğer kanıtların değerlendirilmesi.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Tıbbi ve Uzman Görüşlerinin Yönetimi:</strong></p>
+
+                            <ul>
+                                <li>Tıbbi uzmanlarla iletişim kurma ve gerekli raporları almak.</li>
+                                <li>Hukuki süreçte kullanılmak üzere uzman görüşleri ve değerlendirmelerini sağlama.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Anlaşmalar ve Uzlaşmalar:</strong></p>
+
+                            <ul>
+                                <li>Dava dışı çözümler ve uzlaşmalar için müzakereler yapma.</li>
+                                <li>Müvekkilin çıkarlarını en iyi şekilde temsil etmek için anlaşmalara varılmasını sağlama.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Hukuki Güncellemeler ve Takip:</strong></p>
+
+                            <ul>
+                                <li>İlgili hukuki gelişmeleri ve güncellemeleri takip etme.</li>
+                                <li>Müvekkilin durumuna ve hukuki çerçeveye uygun hareket etme.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Psikolojik ve Sosyal Destek Yönlendirmesi:</strong></p>
+
+                            <ul>
+                                <li>İş kazası sonrası yaşanan zorluklarla başa çıkma konusunda müvekkile destek ve rehberlik sağlama.</li>
+                                <li>Gerekirse psikolojik veya sosyal destek hizmetlerine yönlendirme.</li>
+                            </ul>
+                        </li>
+                    </ol>
+
                 </div>
             </div>
         </div>
     </section>
-
 @endsection
 
 

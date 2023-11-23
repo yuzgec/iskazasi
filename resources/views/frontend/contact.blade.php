@@ -123,7 +123,5 @@
             </div>
 
         </div>
-
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.130897052023!2d28.9990480773018!3d41.06613131585867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a08c111c41%3A0xeb4b94166ef14b63!2sMecit%20Kahraman%20Hukuk%20b%C3%BCrosu!5e0!3m2!1str!2str!4v1699922136190!5m2!1str!2str" width="100%" height="500px" style="border:0;margin-bottom:-50px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 @endsection

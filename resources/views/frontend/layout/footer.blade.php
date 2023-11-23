@@ -13,7 +13,7 @@
 
                             <li><a href="{{ route('home') }}" class="text-white">Anasayfa</a></li>
                             <li><a href="{{ route('corporatedetail', 'hakkimizda') }}" class="text-white">Hakkımızda</a></li>
-                            <li><a href="{{ route('service') }}" class="text-white">Hizmetlerimiz</a></li>
+                            <li><a href="{{ route('servicedetail', 'is-kazasi-avukati') }}" class="text-white">Hizmetlerimiz</a></li>
                             <li><a href="{{ route('corporatedetail', 'mevzuat') }}" class="text-white">Mevzuat</a></li>
                             <li><a href="{{ route('faq') }}" class="text-white">S.S.S.</a></li>
                             <li><a href="{{ route('contactus') }}" class="text-white">İletişim</a></li>
