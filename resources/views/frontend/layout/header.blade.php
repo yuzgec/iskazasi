@@ -18,7 +18,7 @@
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li><a href="{{ route('home') }}" class="nav-link active">Anasayfa</a></li>
                                         <li><a href="{{ route('corporatedetail', 'hakkimizda') }}" class="nav-link">Hakkımızda</a></li>
-                                        <li><a href="{{ route('servicedetail', 'is-kazasi-avukati') }}" class="nav-link">İş Kazası AVukatı</a></li>
+                                        <li><a href="{{ route('servicedetail', 'is-kazasi-avukati') }}" class="nav-link">İş Kazası Avukatı</a></li>
                                         <li><a href="{{ route('corporatedetail', 'mevzuat') }}" class="nav-link">Mevzuat</a></li>
                                         <li><a href="{{ route('faq') }}" class="nav-link">S.S.S.</a></li>
                                         <li><a href="{{ route('contactus') }}" class="nav-link">İletişim</a></li>
