@@ -23,10 +23,6 @@
                                         <li><a href="{{ route('faq') }}" class="nav-link">S.S.S.</a></li>
                                         <li><a href="{{ route('contactus') }}" class="nav-link">İletişim</a></li>
                                     </ul>
-                                    <ul class="header-social-icons social-icons social-icons-clean social-icons-medium position-relative right-7 d-none d-md-block ms-0">
-                                        <li class="social-icons-instagram"><a href="http://www.instagram.com/{{ config('settings.instagram') }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                                        <li class="social-icons-facebook"><a href="http://www.facebook.com/{{ config('settings.facebook') }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    </ul>
 
                                 </nav>
 
