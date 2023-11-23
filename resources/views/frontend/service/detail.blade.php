@@ -28,7 +28,13 @@
                 @endif
                 {!!  $Detail->desc !!}
             </div>
+            <div class="col-lg-4 position-relative">
+                <aside class="sidebar" data-plugin-sticky="" data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 120}}">
 
+                    @include('frontend.layout.form')
+
+                </aside>
+            </div>
         </div>
     </div>
 @endsection
