@@ -16,7 +16,6 @@ class HomeController extends Controller
 
     public function index(){
         SEOMeta::setTitle('İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
         
         return view('frontend.index');
 
@@ -25,7 +24,6 @@ class HomeController extends Controller
     public function reference(){
 
         SEOMeta::setTitle('Referanslarıımız | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
         return view('frontend.page.reference');
     }
@@ -33,7 +31,6 @@ class HomeController extends Controller
     public function faq(){
 
         SEOMeta::setTitle('Sıkça Sorulan Sorular | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
         return view('frontend.page.faq');
     }
@@ -41,7 +38,6 @@ class HomeController extends Controller
     public function team(){
 
         SEOMeta::setTitle('Ekibimiz | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
         return view('frontend.page.team');
     }
@@ -49,7 +45,6 @@ class HomeController extends Controller
     public function contact(){
 
         SEOMeta::setTitle('İletişim | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
         return view('frontend.contact');
     }
 
@@ -57,7 +52,6 @@ class HomeController extends Controller
         $Detail = Service::where('slug', $url)->firstOrFail();
 
         SEOMeta::setTitle($Detail->title. ' | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
         return view('frontend.service.detail', compact('Detail'));
     }
@@ -65,7 +59,6 @@ class HomeController extends Controller
     public function service(){
         SEOMeta::setTitle('İş Kazası Avukatı ');
         SEOMeta::setDescription("İş Kazası Avukatı ");
-        SEOMeta::setCanonical(url()->full());
 
         return view('frontend.service.index');
     }
@@ -74,7 +67,6 @@ class HomeController extends Controller
         $Detail = Blog::where('slug', $url)->firstOrFail();
 
         SEOMeta::setTitle($Detail->title. ' | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
 
         return view('frontend.blog.detail', compact('Detail'));
@@ -84,7 +76,6 @@ class HomeController extends Controller
         $Detail = Page::where('slug', $url)->firstOrFail();
 
         SEOMeta::setTitle($Detail->title. ' | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
         return view('frontend.page.detail', compact('Detail'));
     }
@@ -92,7 +83,6 @@ class HomeController extends Controller
     public function blog(){
 
         SEOMeta::setTitle('Makaleler | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
         return view('frontend.blog.index');
     }
@@ -100,7 +90,6 @@ class HomeController extends Controller
     public function video(){
 
         SEOMeta::setTitle('Video Galeri | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        SEOMeta::setCanonical(url()->full());
 
         $Video = Video::all();
         return view('frontend.video.index', compact('Video'));
