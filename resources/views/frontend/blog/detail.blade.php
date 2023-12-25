@@ -24,7 +24,7 @@
                 <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4"><em>{{ $Detail->title }}</em></h2>
 
                 @if($Detail->getFirstMediaUrl('page'))
-                    <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }}">
+                    <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }} - kazagecirdim.com.tr">
                 @endif
 
                 {!!  $Detail->desc !!}
@@ -39,7 +39,8 @@
                             <ul class="custom-list-style-1 list list-unstyled font-weight-bold">
                                 @foreach($Blog as $item)
                                     <li>
-                                        <a  class="text-decoration-none text-color-dark text-color-hover-primary" href="{{ route('blogdetail' , $item->slug)}}" title="{{ $item->title }}">
+                                        <a  class="text-decoration-none text-color-dark text-color-hover-primary" 
+                                        href="{{ route('blogdetail' , $item->slug)}}" title="{{ $item->title }}">
                                             <i class="icon-arrow-right icons"></i> {{ $item->title }}
                                         </a>
                                     </li>
