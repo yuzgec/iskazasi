@@ -6,7 +6,7 @@
             <div class="row mt-3">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
                     <h1>- {{ $Detail->title }}</h1>
-                    <span class="d-block text-4">İş Kazası Avukatı </span>
+                    <span class="d-block text-4">kazagecirdim.com.tr</span>
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb d-block text-md-end breadcrumb-light">

@@ -70,7 +70,7 @@
                     <div class="card-body p-5">
                         <h2 class="text-color-dark font-weight-bold text-7 line-height-1 mb-1">HIZLI İLETİŞİM FORMU</h2>
                         <p class="custom-font-secondary text-4 pb-1 mb-4">Aşağıdaki formu kullanarak bize hızlı bir şekilde email gönderebilirsiniz.</p>
-                        <form class="contact-form custom-form-style-1" action="" method="POST">
+                        <form class="contact-form custom-form-style-1" action="{{ route('form') }}" method="POST">
                             @csrf
                             <div class="contact-form-success alert alert-success d-none mt-4">
                                 <strong>Success!</strong> Your request has been sent to us.
@@ -94,9 +94,9 @@
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" name="agree" id="tabContent9Checkbox" data-msg-required="You must agree before submiting." required="">
+                                        <input class="form-check-input" type="checkbox" value="" name="agree" id="tabContent9Checkbox" data-msg-required="You must agree before submiting.">
                                         <label class="form-check-label" for="tabContent9Checkbox">
-                                                <a class="text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#aydinlatmametni">Aydınlatma Metni</a> Okudum Kabul Ediyorum.
+                                            <a class="text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#aydinlatmametni">Aydınlatma Metni</a> Okudum Kabul Ediyorum.
                                         </label>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
                             <div class="row">
                                 <div class="form-group col">
                                     <button type="submit" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3 appear-animation animated fadeInUpShorter appear-animation-visible"
-                                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900" style="animation-delay: 100ms;">GÖNDER</button>
+                                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900" style="animation-delay: 100ms;">GÖNDER</button>
                                 </div>
                             </div>
 
@@ -198,18 +198,18 @@
                     <h3 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
                         İŞ KAZASI AVUKATI</span>
                     </h3>
-                    <p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+                    <p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
                         İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.
                         İş kazalarında mağdur olan çalışanların haklarını korumak ve tazminat almalarını sağlamak için iş kazası avukatı devreye girer. İş kazası avukatları, işçilerin haklarını anlamalarına yardımcı olur,
                         iş kazası davalarını yönetir ve adil tazminat alabilmeleri için hukuki destek sağlar.</p>
-                    <p class="pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600">
+                    <p class="pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                         İş kazalarıyla ilgili hukuki süreç karmaşık olabilir ve bu nedenle iş kazası avukatlarının uzmanlığına ihtiyaç duyulur.
                         Bir iş kazası avukatı, işyerinde meydana gelen kazanın nedenini araştırır, mağdurların haklarını belirler ve uygun hukuki adımları atar.
                         Bu süreçte avukat, işverenin sorumluluğunu ve ihmallerini ortaya çıkarmak için delilleri toplar, mahkeme huzurunda dinlenecek tanıkları belirler
                         ve tıbbi raporları değerlendirir. İş kazası avukatları, müvekkillerini adalete ulaşmaları için temsil eder ve adil tazminat taleplerini savunur.</p>
 
-                    <a href="demo-cleaning-services-about.html" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3 appear-animation"
-                       data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">Devamını Oku</a>
+                    <a href="{{ route('corporatedetail', 'hakkimizda') }}" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3 appear-animation"
+                       data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Devamını Oku</a>
                 </div>
                 <div class="col-sm-10 col-lg-6 offset-sm-1 ps-sm-5 ps-lg-0">
                     <div class="position-relative">
@@ -236,12 +236,15 @@
                     <div class="d-flex align-items-center mb-2">
                         <span class="custom-line appear-animation" data-appear-animation="customLineAnimation" appear-animation-duration="1s"></span>
                         <div class="overflow-hidden ms-3">
-                            <h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight" data-appear-animation-delay="1000">İŞ KAZASI</h2>
+                            <h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight"
+                             data-appear-animation-delay="1000">İŞ KAZASI</h2>
                         </div>
                     </div>
-                    <h3 class="text-color-dark font-weight-bold text-transform-none text-8 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">HİZMETLERİMİZ</h3>
+                    <h3 class="text-color-dark font-weight-bold text-transform-none text-8 mb-3 pb-1 appear-animation" 
+                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">MAKALELER</h3>
                     <p class="mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
-                        İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.
+                        İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır.
+                         Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.
                     </p>
                 </div>
                 <div class="col-lg-5 col-xl-4">
@@ -320,7 +323,7 @@
             <div class="row align-items-center justify-content-center pt-3">
                 <div class="col-md-9 col-lg-7 col-xl-9 text-center text-xl-start mb-4 mb-xl-0">
                     <h2 class="text-color-light font-weight-medium line-height-4 text-9 negative-ls-1 mb-2">Uzman Kadromuz <span class="font-weight-extra-bold custom-highlight-1 p-1
-                    appear-animation" data-appear-animation="customHighlightAnim" data-appear-animation-delay="300">İŞ KAZALARI</span> ile ilgiliz davalarınızda yanınızda</h2>
+                    appear-animation" data-appear-animation="customHighlightAnim" data-appear-animation-delay="300">İŞ KAZALARI</span> ile ilgili davalarınızda yanınızda</h2>
                     <p class="custom-font-secondary custom-font-size-1 font-weight-light text-color-light opacity-8 mb-0">İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi
                         yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.</p>
                 </div>
@@ -370,7 +373,7 @@
                             <div class="card-header" id="collapse1HeadingTwo">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1Two" aria-expanded="false" aria-controls="collapse1Two">
-                                        İş kazasından sonra ne yapmalıyım?
+                                       Kaza geçirdim sonra ne yapmalıyım?
                                     </a>
                                 </h4>
                             </div>
