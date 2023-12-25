@@ -229,7 +229,6 @@
         </div>
     </section>
 
-
     <section class="section border-0 py-4 m-0">
         <div class="container">
             <div class="row align-items-end pb-3 mb-5 mb-lg-4">
@@ -263,15 +262,13 @@
                          data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 2}, '1199': {'items': 2}},
                          'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
                        @foreach ($Blog as $item)
-                           
-                   
                         <div>
                             <a href="{{ route('service') }}" class="text-decoration-none">
                                 <div class="card custom-card-style-1">
                                     <div class="card-body text-center py-5">
                                         <div class="custom-card-style-1-image-wrapper bg-primary d-inline-block mb-3">
                                             <a href="{{ route('blogdetail', $item->slug)}}" title="{{ $item->title }}">
-                                                <img src="is-kazasi-banner.jpg" class="img-fluid" alt="{{ $item->title }}" />
+                                                <img src="{{ (!$item->getFirstMediaUrl('page')) ? '/resimyok.jpg' : $item->getFirstMediaUrl('page', 'thumb') }}" class="img-fluid" alt="{{ $item->title }}" />
                                             </a>
                                         </div>
                                         <h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2">{{ $item->title }}</h4>

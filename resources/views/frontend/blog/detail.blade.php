@@ -21,7 +21,7 @@
 
     <div class="container">
         <div class="row pb-4">
-            <div class="col-lg-12 mb-5 mb-lg-0 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="animation-delay: 200ms;">
+            <div class="col-lg-8 col-12 mb-5 mb-lg-0 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="animation-delay: 200ms;">
                 <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4"><em>{{ $Detail->title }}</em></h2>
 
                 @if($Detail->getFirstMediaUrl('page'))
@@ -29,6 +29,28 @@
                 @endif
 
                 {!!  $Detail->desc !!}
+            </div>
+            <div class="col-lg-4 col-12 position-relative">
+                <aside class="sidebar" data-plugin-sticky="" data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 120}}">
+                
+
+                    <div class="card border-0 border-radius-0 custom-box-shadow-1 mb-3">
+                        <div class="card-body">
+                            <h3 class="text-transform-none font-weight-bold pb-3 mb-4">MAKALELER</h3>
+                            <ul class="custom-list-style-1 list list-unstyled font-weight-bold">
+                                @foreach($Blog as $item)
+                                    <li>
+                                        <a  class="text-decoration-none text-color-dark text-color-hover-primary" href="{{ route('servicedetail' , $item->slug)}}" title="{{ $item->title }}">
+                                            <i class="icon-arrow-right icons"></i> {{ $item->title }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+
+                    @include('frontend.layout.form')
+                </aside>
             </div>
         </div>
     </div>

@@ -33,11 +33,11 @@
                 <aside class="sidebar" data-plugin-sticky="" data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 120}}">
                     @include('frontend.layout.form')
 
-                    <div class="card border-0 border-radius-0 custom-box-shadow-1 px-2 ">
+                    <div class="card border-0 border-radius-0 custom-box-shadow-1">
                         <div class="card-body">
-                            <h3 class="text-transform-none font-weight-bold pb-3 mb-4">ÇALIŞMA ALANLARIMIZ</h3>
+                            <h3 class="text-transform-none font-weight-bold pb-3 mb-4">MAKALELER</h3>
                             <ul class="custom-list-style-1 list list-unstyled font-weight-bold">
-                                @foreach($Service->where('category', 1) as $item)
+                                @foreach($Blog as $item)
                                     <li>
                                         <a  class="text-decoration-none text-color-dark text-color-hover-primary" href="{{ route('servicedetail' , $item->slug)}}" title="{{ $item->title }}">
                                             <i class="icon-arrow-right icons"></i> {{ $item->title }}
