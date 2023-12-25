@@ -15,8 +15,8 @@ class HomeController extends Controller
 {
 
     public function index(){
+
         SEOMeta::setTitle('İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        
         return view('frontend.index');
 
     }
@@ -24,14 +24,12 @@ class HomeController extends Controller
     public function reference(){
 
         SEOMeta::setTitle('Referanslarıımız | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-
         return view('frontend.page.reference');
     }
 
     public function faq(){
 
         SEOMeta::setTitle('Sıkça Sorulan Sorular | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-
         return view('frontend.page.faq');
     }
 
