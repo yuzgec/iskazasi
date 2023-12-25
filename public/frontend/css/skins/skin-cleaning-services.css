@@ -7263,3 +7263,17 @@ html.boxed .body {
 	background-color: #00a1cd !important;
 	color: #FFF !important;
 }
+
+.kisa-iki{
+	display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+.kisa-uc{
+	display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+

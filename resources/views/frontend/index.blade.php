@@ -271,15 +271,14 @@
                                                 <img src="{{ (!$item->getFirstMediaUrl('page')) ? '/resimyok.jpg' : $item->getFirstMediaUrl('page', 'thumb') }}" class="img-fluid" alt="{{ $item->title }}" />
                                             </a>
                                         </div>
-                                        <h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2">{{ $item->title }}</h4>
-                                        <p class="custom-card-style-1-description">
+                                        <h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2">
+                                            <a href="{{ route('blogdetail', $item->slug)}}" title="{{ $item->title }}">
+                                                {{ $item->title }}
+                                            </a>
+                                        </h4>
+                                        <p class="custom-card-style-1-description kisa-uc">
                                             {{ $item->short }} 
                                         </p>
-                                        <span class="custom-card-style-1-link font-weight-bold">
-                                            <a href="{{ route('blogdetail', $item->slug)}}" title="{{ $item->title }}">
-                                                Devamı için
-                                            </a>
-                                        </span>
                                     </div>
                                 </div>
                             </a>
