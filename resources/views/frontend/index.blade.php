@@ -170,7 +170,7 @@
                         <path d="M22 11.07V12a10 10 0 1 1-5.93-9.14"/>
                         <polyline points="23 3 12 14 9 11"/>
                     </svg>
-                    <h3 class="text-transform-none text-color-dark font-weight-bold mb-0 text-4 px-2 px-sm-0 ps-1 ms-xl-2 mt-3 mt-xl-0">Uzman Avukat Kadrosu</h3>
+                    <h3 class="text-transform-none text-color-dark font-weight-bold mb-0 text-4 px-2 px-sm-0 ps-1 ms-xl-2 mt-3 mt-xl-0">Türkiye'nin her yerinde</h3>
                 </div>
             </div>
         </div>
@@ -192,7 +192,8 @@
                     <div class="d-flex align-items-center mb-2">
                         <span class="custom-line appear-animation" data-appear-animation="customLineAnimation" appear-animation-duration="1s"></span>
                         <div class="overflow-hidden ms-3">
-                            <h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight" data-appear-animation-delay="1000">BİZ KİMİZ</h2>
+                            <h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation"
+                             data-appear-animation="maskRight" data-appear-animation-delay="1000">kazagecirdim.com.tr</h2>
                         </div>
                     </div>
                     <h3 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
@@ -237,7 +238,7 @@
                         <span class="custom-line appear-animation" data-appear-animation="customLineAnimation" appear-animation-duration="1s"></span>
                         <div class="overflow-hidden ms-3">
                             <h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight"
-                             data-appear-animation-delay="1000">İŞ KAZASI</h2>
+                             data-appear-animation-delay="1000">İŞ KAZASI AVUKATI</h2>
                         </div>
                     </div>
                     <h3 class="text-color-dark font-weight-bold text-transform-none text-8 mb-3 pb-1 appear-animation" 
@@ -249,7 +250,7 @@
                 </div>
                 <div class="col-lg-5 col-xl-4">
                     <div class="d-flex justify-content-lg-end">
-                        <a href="{{ route('service') }}" class="btn btn-primary btn-modern font-weight-bold text-3 btn-px-4 py-3 appear-animation" data-appear-animation="fadeInLeftShorter"
+                        <a href="{{ route('blog') }}" class="btn btn-primary btn-modern font-weight-bold text-3 btn-px-4 py-3 appear-animation" data-appear-animation="fadeInLeftShorter"
                            data-appear-animation-delay="1800">HEPSİNİ İNCELE</a>
                         <a href="{{ route('contactus') }}" class="btn btn-dark btn-modern font-weight-bold text-3 btn-px-4 py-3 ms-4 appear-animation"
                            data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1600">İLETİŞİME GEÇ</a>
@@ -261,34 +262,30 @@
                     <div class="owl-carousel nav-outside nav-arrows-1 custom-carousel-box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
                          data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 2}, '1199': {'items': 2}},
                          'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
+                       @foreach ($Blog as $item)
+                           
+                   
                         <div>
                             <a href="{{ route('service') }}" class="text-decoration-none">
                                 <div class="card custom-card-style-1">
                                     <div class="card-body text-center py-5">
                                         <div class="custom-card-style-1-image-wrapper bg-primary d-inline-block mb-3">
-                                            <img src="is-kazasi-banner.jpg" class="img-fluid" alt="" />
+                                            <a href="{{ route('blogdetail', $item->slug)}}" title="{{ $item->title }}">
+                                                <img src="is-kazasi-banner.jpg" class="img-fluid" alt="{{ $item->title }}" />
+                                            </a>
                                         </div>
-                                        <h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2">Hizmet Adı 1</h4>
+                                        <h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2">{{ $item->title }}</h4>
                                         <p class="custom-card-style-1-description">İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır.Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.  </p>
-                                        <span class="custom-card-style-1-link font-weight-bold">Devamı için</span>
+                                        <span class="custom-card-style-1-link font-weight-bold">
+                                            <a href="{{ route('blogdetail', $item->slug)}}" title="{{ $item->title }}">
+                                                Devamı için
+                                            </a>
+                                        </span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div>
-                            <a href="{{ route('service') }}" class="text-decoration-none">
-                                <div class="card custom-card-style-1">
-                                    <div class="card-body text-center py-5">
-                                        <div class="custom-card-style-1-image-wrapper bg-primary d-inline-block mb-3">
-                                            <img src="is-kazasi-banner.jpg" class="img-fluid" alt="" />
-                                        </div>
-                                        <h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2">Hizmet Adı 2</h4>
-                                        <p class="custom-card-style-1-description">İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir. </p>
-                                        <span class="custom-card-style-1-link font-weight-bold">Devamı için</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        @endforeach
 
                     </div>
                 </div>
