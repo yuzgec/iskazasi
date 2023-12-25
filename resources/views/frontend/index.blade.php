@@ -272,7 +272,9 @@
                                             </a>
                                         </div>
                                         <h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2">{{ $item->title }}</h4>
-                                        <p class="custom-card-style-1-description">İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır.Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.  </p>
+                                        <p class="custom-card-style-1-description">
+                                            {{ $item->short }} 
+                                        </p>
                                         <span class="custom-card-style-1-link font-weight-bold">
                                             <a href="{{ route('blogdetail', $item->slug)}}" title="{{ $item->title }}">
                                                 Devamı için
