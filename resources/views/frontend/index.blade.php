@@ -276,9 +276,11 @@
                                                 {{ $item->title }}
                                             </a>
                                         </h4>
-                                        <p class="custom-card-style-1-description kisa-uc">
-                                            {{ $item->short }} 
-                                        </p>
+                                        <div class="kisa-uc">
+                                            <p class="custom-card-style-1-description ">
+                                                {{ $item->short }} 
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
