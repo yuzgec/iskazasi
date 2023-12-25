@@ -40,7 +40,7 @@
                             <ul class="custom-list-style-1 list list-unstyled font-weight-bold">
                                 @foreach($Blog as $item)
                                     <li>
-                                        <a  class="text-decoration-none text-color-dark text-color-hover-primary" href="{{ route('servicedetail' , $item->slug)}}" title="{{ $item->title }}">
+                                        <a  class="text-decoration-none text-color-dark text-color-hover-primary" href="{{ route('blogdetail' , $item->slug)}}" title="{{ $item->title }}">
                                             <i class="icon-arrow-right icons"></i> {{ $item->title }}
                                         </a>
                                     </li>
