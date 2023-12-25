@@ -451,88 +451,93 @@
                     <p class="mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
                         İş kazası avukatlarının gerçekleştirdiği temel işler ve görevler aşağıdaki başlıklar altında özetlenebilir:
                     </p>
-                    <ol style="background: white;margin:10px">
-                        <li>
-                            <p><strong>Danışmanlık ve Bilgilendirme:</strong></p>
+                 
+                        <ol style="background: white;margin:10px;">
+                            <div class="p-4">
+                         
+                                <li>
+                                    <p><strong>Danışmanlık ve Bilgilendirme:</strong></p>
 
-                            <ul>
-                                <li>Müvekkilleri, iş kazaları ve ilgili hukuki süreçler hakkında bilgilendirme.</li>
-                                <li>Haklar, yükümlülükler ve olası tazminatlar konusunda danışmanlık yapma.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Durum Değerlendirme ve Strateji Belirleme:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i> Müvekkilleri, iş kazaları ve ilgili hukuki süreçler hakkında bilgilendirme.</li>
+                                        <li><i class="fas fa-check"></i> Haklar, yükümlülükler ve olası tazminatlar konusunda danışmanlık yapma.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Durum Değerlendirme ve Strateji Belirleme:</strong></p>
 
-                            <ul>
-                                <li>Kazanın detaylarını inceleme ve hukuki bir strateji belirleme.</li>
-                                <li>Olası tazminat miktarını ve dava şansını değerlendirme.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Kaza Raporlaması ve Resmi İşlemler:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>Kazanın detaylarını inceleme ve hukuki bir strateji belirleme.</li>
+                                        <li><i class="fas fa-check"></i>Olası tazminat miktarını ve dava şansını değerlendirme.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Kaza Raporlaması ve Resmi İşlemler:</strong></p>
 
-                            <ul>
-                                <li>İş kazası raporlarının hazırlanması ve ilgili kurumlara sunulması.</li>
-                                <li>Gerekli resmi başvuruların ve evrak işlerinin yönetimi.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Tazminat Talepleri ve Müzakereler:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>İş kazası raporlarının hazırlanması ve ilgili kurumlara sunulması.</li>
+                                        <li><i class="fas fa-check"></i>Gerekli resmi başvuruların ve evrak işlerinin yönetimi.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Tazminat Talepleri ve Müzakereler:</strong></p>
 
-                            <ul>
-                                <li>İş kazası sonucunda hak edilen tazminatlar için taleplerde bulunma.</li>
-                                <li>Sigorta şirketleri veya işverenlerle müzakereler yürütme.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Dava Takibi ve Temsil:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>İş kazası sonucunda hak edilen tazminatlar için taleplerde bulunma.</li>
+                                        <li><i class="fas fa-check"></i>Sigorta şirketleri veya işverenlerle müzakereler yürütme.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Dava Takibi ve Temsil:</strong></p>
 
-                            <ul>
-                                <li>İş kazası davalarında müvekkili mahkemede temsil etme.</li>
-                                <li>Davanın her aşamasında müvekkilleri temsil etmek ve savunmak.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Delil Toplama ve Analiz:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>İş kazası davalarında müvekkili mahkemede temsil etme.</li>
+                                        <li><i class="fas fa-check"></i>Davanın her aşamasında müvekkilleri temsil etmek ve savunmak.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Delil Toplama ve Analiz:</strong></p>
 
-                            <ul>
-                                <li>Kazayla ilgili delillerin toplanması ve analizi.</li>
-                                <li>Tanık ifadeleri, medikal raporlar ve diğer kanıtların değerlendirilmesi.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Tıbbi ve Uzman Görüşlerinin Yönetimi:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>Kazayla ilgili delillerin toplanması ve analizi.</li>
+                                        <li><i class="fas fa-check"></i>Tanık ifadeleri, medikal raporlar ve diğer kanıtların değerlendirilmesi.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Tıbbi ve Uzman Görüşlerinin Yönetimi:</strong></p>
 
-                            <ul>
-                                <li>Tıbbi uzmanlarla iletişim kurma ve gerekli raporları almak.</li>
-                                <li>Hukuki süreçte kullanılmak üzere uzman görüşleri ve değerlendirmelerini sağlama.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Anlaşmalar ve Uzlaşmalar:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>Tıbbi uzmanlarla iletişim kurma ve gerekli raporları almak.</li>
+                                        <li><i class="fas fa-check"></i>Hukuki süreçte kullanılmak üzere uzman görüşleri ve değerlendirmelerini sağlama.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Anlaşmalar ve Uzlaşmalar:</strong></p>
 
-                            <ul>
-                                <li>Dava dışı çözümler ve uzlaşmalar için müzakereler yapma.</li>
-                                <li>Müvekkilin çıkarlarını en iyi şekilde temsil etmek için anlaşmalara varılmasını sağlama.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Hukuki Güncellemeler ve Takip:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>Dava dışı çözümler ve uzlaşmalar için müzakereler yapma.</li>
+                                        <li><i class="fas fa-check"></i>Müvekkilin çıkarlarını en iyi şekilde temsil etmek için anlaşmalara varılmasını sağlama.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Hukuki Güncellemeler ve Takip:</strong></p>
 
-                            <ul>
-                                <li>İlgili hukuki gelişmeleri ve güncellemeleri takip etme.</li>
-                                <li>Müvekkilin durumuna ve hukuki çerçeveye uygun hareket etme.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p><strong>Psikolojik ve Sosyal Destek Yönlendirmesi:</strong></p>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>İlgili hukuki gelişmeleri ve güncellemeleri takip etme.</li>
+                                        <li><i class="fas fa-check"></i>Müvekkilin durumuna ve hukuki çerçeveye uygun hareket etme.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Psikolojik ve Sosyal Destek Yönlendirmesi:</strong></p>
 
-                            <ul>
-                                <li>İş kazası sonrası yaşanan zorluklarla başa çıkma konusunda müvekkile destek ve rehberlik sağlama.</li>
-                                <li>Gerekirse psikolojik veya sosyal destek hizmetlerine yönlendirme.</li>
-                            </ul>
-                        </li>
-                    </ol>
+                                    <ul class="list list-icons list-primary list-borders">
+                                        <li><i class="fas fa-check"></i>İş kazası sonrası yaşanan zorluklarla başa çıkma konusunda müvekkile destek ve rehberlik sağlama.</li>
+                                        <li><i class="fas fa-check"></i>Gerekirse psikolojik veya sosyal destek hizmetlerine yönlendirme.</li>
+                                    </ul>
+                                </li>
+                            <div>
+                        </ol>
+             
 
                 </div>
             </div>
