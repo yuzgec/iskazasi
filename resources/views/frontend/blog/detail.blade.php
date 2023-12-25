@@ -6,13 +6,12 @@
             <div class="row mt-3">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
                     <h1>- {{ $Detail->title }}</h1>
-                    <span class="d-block text-4">İş Kazası Avukatı </span>
+                    <span class="d-block text-4">İş Kazası Avukatı / kazagecirdim.com.tr</span>
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb d-block text-md-end breadcrumb-light">
                         <li><a href="{{ route('home') }}">ANASAYFA</a></li>
                         <li><a href="{{ route('blog') }}">BLOG</a></li>
-                        <li class="active">{{ $Detail->title }}</li>
                     </ul>
                 </div>
             </div>
