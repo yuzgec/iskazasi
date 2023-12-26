@@ -196,8 +196,10 @@
                              data-appear-animation="maskRight" data-appear-animation-delay="1000">kazagecirdim.com.tr</h2>
                         </div>
                     </div>
-                    <h1 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-                        İŞ KAZASI AVUKATI</span>
+                    <h1 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-4 appear-animation"
+                        data-appear-animation="fadeInUpShorter"
+                        data-appear-animation-delay="1200">
+                        İŞ KAZASI AVUKATI
                     </h1>
                     <p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
                         İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.
