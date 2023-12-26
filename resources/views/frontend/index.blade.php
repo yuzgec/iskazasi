@@ -50,8 +50,8 @@
             </div>
             <div class="row justify-content-center justify-content-lg-start pb-5 mb-5">
                 <div class="col-md-10 col-lg-6 text-center text-lg-end pe-lg-4 pb-5 mb-5">
-                    <h1 class="text-color-light font-weight-medium line-height-4 text-10 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-                        Haklarınız İçin Savaşıyoruz,  <span class="font-weight-extra-bold custom-highlight-1 ws-nowrap p-1 customHighlightAnim customHighlightAnimDelay">Güvenle İlerleyin.</span></h1>
+                    <h2 class="text-color-light font-weight-medium line-height-4 text-10 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                        Haklarınız İçin Savaşıyoruz,  <span class="font-weight-extra-bold custom-highlight-1 ws-nowrap p-1 customHighlightAnim customHighlightAnimDelay">Güvenle İlerleyin.</span></h2>
                     <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
                         <p class="custom-font-secondary font-weight-light custom-font-size-1 text-color-light opacity-6 mb-4">Haklarınız İçin Mücadele Ediyoruz, Endişelenmeyin.</p>
                     </div>
@@ -196,9 +196,9 @@
                              data-appear-animation="maskRight" data-appear-animation-delay="1000">kazagecirdim.com.tr</h2>
                         </div>
                     </div>
-                    <h3 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
+                    <h1 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
                         İŞ KAZASI AVUKATI</span>
-                    </h3>
+                    </h1>
                     <p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
                         İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.
                         İş kazalarında mağdur olan çalışanların haklarını korumak ve tazminat almalarını sağlamak için iş kazası avukatı devreye girer. İş kazası avukatları, işçilerin haklarını anlamalarına yardımcı olur,
@@ -319,7 +319,7 @@
         <div class="container py-5 my-5">
             <div class="row align-items-center justify-content-center pt-3">
                 <div class="col-md-9 col-lg-7 col-xl-9 text-center text-xl-start mb-4 mb-xl-0">
-                    <h2 class="text-color-light font-weight-medium line-height-4 text-9 negative-ls-1 mb-2">Uzman Kadromuz <span class="font-weight-extra-bold custom-highlight-1 p-1
+                    <h2 class="text-color-light font-weight-medium line-height-4 text-9 negative-ls-1 mb-2">Uzman Avukat Kadromuz <span class="font-weight-extra-bold custom-highlight-1 p-1
                     appear-animation" data-appear-animation="customHighlightAnim" data-appear-animation-delay="300">İŞ KAZALARI</span> ile ilgili davalarınızda yanınızda</h2>
                     <p class="custom-font-secondary custom-font-size-1 font-weight-light text-color-light opacity-8 mb-0">İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi
                         yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.</p>
