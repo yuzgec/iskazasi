@@ -46,16 +46,17 @@
 
         @include('frontend.layout.js')
         @yield('customJS')
+            <!-- Event snippet for Sayfa görüntüleme conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-969497658/5B5CCJDn_ZUYELq4pc4D'}); </script>
 
         <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id={{config('settings.googleTagManager')}}">
-            </script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{config('settings.googleTagManager')}}"></script>
             <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', '{{config('settings.googleTagManager')}}');
+
 
 
             popupWhatsApp = () => {
@@ -77,14 +78,13 @@
             sendBtn.addEventListener("click", () => {
             let msg = document.getElementById('whats-in').value;
             let relmsg = msg.replace(/ /g,"%20");
-                //just change the numbers "1515551234567" for your number. Don't use +001-(555)1234567     
             window.open('https://wa.me/{{ config('settings.whatsapp')}}?text='+relmsg, '_blank'); 
             
             });
 
             setTimeout(() => {
                 popup.classList.toggle('is-active-whatsapp-popup');
-            }, 3000);
+            }, 1500);
             }
 
             popupWhatsApp();
