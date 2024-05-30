@@ -10,3 +10,16 @@
 <link rel="stylesheet" href="/frontend/css/demos/demo-cleaning-services.css?ver=4">
 <link rel="stylesheet" href="/frontend/css/skins/skin-cleaning-services.css?ver=4">
 <link id="skinCSS" rel="stylesheet" href="/frontend/css/color.css?ver=4">
+
+       <script> gtag('event', 'conversion', {'send_to': 'AW-969497658/5B5CCJDn_ZUYELq4pc4D'}); </script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{config('settings.googleTagManager')}}"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{config('settings.googleTagManager')}}');
+
+        </script>

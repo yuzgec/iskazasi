@@ -46,17 +46,7 @@
 
         @include('frontend.layout.js')
         @yield('customJS')
-            <!-- Event snippet for Sayfa görüntüleme conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-969497658/5B5CCJDn_ZUYELq4pc4D'}); </script>
-
-        <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id={{config('settings.googleTagManager')}}"></script>
-            <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '{{config('settings.googleTagManager')}}');
-
+     <script>
 
 
             popupWhatsApp = () => {
