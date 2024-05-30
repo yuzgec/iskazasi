@@ -99,6 +99,8 @@
                                 <h2 class="font-weight-bold text-color-dark">- Telefon</h2>
                                 <p class="text-4">
                                     {{ config('settings.telefon1') }} <br>
+                                    {{ config('settings.telefon2') }}
+
                                 </p>
                             </div>
                         </div>
