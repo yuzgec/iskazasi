@@ -131,7 +131,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <img src="https://www.drturancetin.com/uzman-dr-turan-cetin.png" alt="Dr. Turan Çetin" style="margin-bottom: 10px;width: 50%;">
+                        <img src="https://kazagecirdim.com.tr/logo.jpg" alt="Kaza Geçirdim" style="margin-bottom: 10px;width: 50%;">
                     </td>
                 </tr>
 
