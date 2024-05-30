@@ -104,7 +104,7 @@ class HomeController extends Controller
         $New->save();
 
         Mail::send("mail.form",compact('New'),function ($message) use($New) {
-            $message->to('olcayy@gmail.com')->subject($New->name.' - Site Bilgi Formu');
+            $message->to(config('settings.email1'))->subject($New->name.' - Site Bilgi Formu');
         });
 
         return redirect()->route('home');
