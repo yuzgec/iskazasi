@@ -4,6 +4,12 @@
     .yildiz{
         color:red !important;
     }
+
+    .yaziplan{
+        background : #003366 !important;
+        color:white;
+        padding: 5px;
+    }
 </style>    
 @endsection
 @section('content')
@@ -18,14 +24,14 @@
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
                     <ul class="breadcrumb d-block text-md-end breadcrumb-light">
                         <li><a href="{{ route('home') }}">Anasayfa</a></li>
-                        <li class="active">REFERANSLARIMIZ</li>
+                        <li class="active">TAZMİNAT HESAPLAMA</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container container-fluid">
+    <div class="container">
         <div class="row">
 
             <div class="card card-border card-border-top bg-color-light mb-4">
@@ -128,11 +134,11 @@
                     <div class="row">
                         <div class="col">
                                                     
-                            <h2>İş Kazası Tazminatı Nedir?</h2>
+                            <h2 class="yaziplan">İş Kazası Tazminatı Nedir?</h2>
 
                             <p>İş kazası tazminatı, iş yerinde meydana gelen bir kaza sonucunda yaralanan veya hayatını kaybeden çalışanın ya da ailesinin maddi zararlarını karşılamak amacıyla ödenen bir tazminattır. Bu tazminat, iş kazası sonucu oluşan maddi ve manevi zararları telafi etmeyi amaçlar.</p>
 
-                            <h2>İş Kazası Tazminat Türleri</h2>
+                            <h2 class="yaziplan">İş Kazası Tazminat Türleri</h2>
 
                             <h4>1. Maddi Tazminat</h4>
 
@@ -142,7 +148,7 @@
 
                             <p>Manevi tazminat, iş kazasının sebep olduğu psikolojik ve duygusal zararları telafi etmek için ödenir. Bu, çalışanın yaşadığı acı, stres ve ruhsal sıkıntılar için verilir.</p>
 
-                            <h2>İş Kazası Tazminat Hesaplama Kriterleri</h2>
+                            <h2 class="yaziplan">İş Kazası Tazminat Hesaplama Kriterleri</h2>
 
                             <h4>1. Çalışanın Geliri</h4>
 
@@ -160,7 +166,7 @@
 
                             <p>Çalışanın yaşı ve iş yerindeki kıdemi de tazminat miktarını etkileyen faktörlerdendir. Genç çalışanların iş gücü kaybı daha uzun vadeli olduğundan, tazminat miktarı da buna göre artar.</p>
 
-                            <h2>İş Kazası Tazminatı Nasıl Hesaplanır?</h2>
+                            <h2 class="yaziplan">İş Kazası Tazminatı Nasıl Hesaplanır?</h2>
 
                             <h4>Adım 1: Gelirin Belirlenmesi</h4>
 
@@ -182,7 +188,7 @@
 
                             <p>Yukarıdaki adımlarda belirlenen tüm faktörler toplanarak nihai tazminat miktarı hesaplanır.</p>
 
-                            <h2>Kazagecirdim.com.tr ile Tazminat Hesaplama Desteği</h2>
+                            <h2 class="yaziplan">Kazagecirdim.com.tr ile Tazminat Hesaplama Desteği</h2>
 
                             <h4>Profesyonel Danışmanlık</h4>
 
@@ -196,7 +202,7 @@
 
                             <p>Tazminat sürecinizi hızlandırmak ve hak ettiğiniz tazminatı en kısa sürede almanız için çalışıyoruz. Güvenilir ve profesyonel hizmet anlayışımızla yanınızdayız.</p>
 
-                            <h2>Sıkça Sorulan Sorular</h2>
+                            <h4 class="yaziplan">Sıkça Sorulan Sorular</h4>
 
                             <h4>İş kazası tazminatı nasıl talep edilir?</h4>
 

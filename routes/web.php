@@ -19,6 +19,7 @@ Route::get('/referanslarimiz', [HomeController::class, 'reference'])->name('refe
 Route::get('/sss', [HomeController::class, 'faq'])->name('faq');
 Route::get('/ekibimiz', [HomeController::class, 'team'])->name('team');
 Route::get('/is-kazasi-tazminat-hesaplama', [HomeController::class, 'calc'])->name('calc');
+Route::get('/is-kazasi-tazminat-hesaplama-sonuc', [HomeController::class, 'calcresult'])->name('calcresult');
 Route::post('/calcpost',[HomeController::class, 'calcpost'])->name('calcpost');
 Route::post('/form', [HomeController::class, 'form'])->name('form');
 

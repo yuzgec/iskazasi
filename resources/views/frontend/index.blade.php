@@ -133,6 +133,48 @@
                 </ul>
             </div>
         </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-7 col-xl-8 mb-4 mb-lg-0">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="custom-line appear-animation" data-appear-animation="customLineAnimation" appear-animation-duration="1s"></span>
+                    <div class="overflow-hidden ms-3">
+                        <h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight" data-appear-animation-delay="1000">İŞ KAZASI AVUKATI</h2>
+                    </div>
+                </div>
+                <h3 class=" font-weight-bold text-transform-none text-8 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">HİZMETLERİMİZ</h3>
+                <p class="mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">İş Kazasında Haklarınızı Koruyun, Adaletin Yanınızdayız!</p>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+                <div class="d-flex justify-content-lg-end">
+                    <a href="{{ route('contactus')}}" class="btn btn-primary btn-modern font-weight-bold text-3 btn-px-4 py-3 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1800">İLETİŞİME GEÇ</a>
+                </div>
+            </div>
+        </div>
+        <div class="row appear-animation mb-5 mt-5" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2000">
+            <div class="col">
+                <div class="owl-carousel nav-outside nav-arrows-1 custom-carousel-box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 4}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
+                    @foreach ($Service as $item)
+                    <div>
+                        <a href="{{ route('servicedetail', $item->slug)}}" class="text-decoration-none" title="{{$item->title}}">
+                            <div class="card custom-card-style-1">
+                                <div class="card-body text-center py-5">
+                                    
+                                    <h4 class="custom-card-style-1-title  font-weight-bold mb-2">{{$item->title}}</h4>
+                                    <p class="custom-card-style-1-description">{{$item->short}} </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="row">
             <div class="col-6 col-xl-3 mb-5 mb-xl-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
                 <div class="d-flex align-items-center justify-content-center flex-column flex-xl-row text-center">

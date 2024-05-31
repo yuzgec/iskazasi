@@ -70,9 +70,15 @@ class HomeController extends Controller
         $new->final = $final_tazminat;
         $new->save();
         //dd($final_tazminat);
+        session()->put('calc_id', $new->id);
 
-        return redirect()->route('');
+        return redirect()->route('calcresult');
 
+    }
+
+    public function calcresult(){
+        $detail = Calculator::find(session()->get('calc_id'));
+        return view('frontend.page.calcresult',compact('detail'));
     }
 
     public function faq(){
