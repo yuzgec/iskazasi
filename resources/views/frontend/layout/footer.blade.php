@@ -30,7 +30,7 @@
                             </div>
                             <div class="feature-box-info ps-2">
                                 <p class="font-weight-semibold line-height-1 text-2 pb-0 mb-1">İletişime Geç</p>
-                                <a href="tel:+1234567890" class="text-color-light  text-decoration-none font-weight-bold line-height-1 custom-font-size-1 pb-0">{{ config('settings.telefon1') }}</a>
+                                <a href="tel:{{ config('settings.telefon1') }}" class="text-color-light  text-decoration-none font-weight-bold line-height-1 custom-font-size-1 pb-0">{{ config('settings.telefon1') }}</a>
                             </div>
                         </div>
 

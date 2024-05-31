@@ -11,26 +11,15 @@
 <link rel="stylesheet" href="/frontend/css/skins/skin-cleaning-services.css?ver=4">
 <link id="skinCSS" rel="stylesheet" href="/frontend/css/color.css?ver=4">
 
-       <script> gtag('event', 'conversion', {'send_to': 'GTM-KRSV9JZ7/tEJKCL3Sx7UZELq4pc4D'}); </script>
+       <script> gtag('event', 'conversion', {'send_to': 'G-0RL2BZLKH0/tEJKCL3Sx7UZELq4pc4D'}); </script>
 
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KRSV9JZ7"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RL2BZLKH0"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'GTM-KRSV9JZ7');
+        gtag('config', 'G-0RL2BZLKH0');
 
         </script>
-
-
-       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RL2BZLKH0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0RL2BZLKH0');
-</script>
