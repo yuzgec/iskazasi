@@ -37,3 +37,15 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRSV9JZ7"
        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <!-- End Google Tag Manager (noscript) -->
+
+
+
+       <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RL2BZLKH0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0RL2BZLKH0');
+</script>
