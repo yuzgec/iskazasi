@@ -22,7 +22,6 @@
     <div class="container">
         <div class="row pb-4">
             <div class="col-lg-8 mb-5 mb-lg-0 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="animation-delay: 200ms;">
-                <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4"><em>{{ $Detail->title }}</em></h2>
                 @if($Detail->getFirstMediaUrl('page'))
                     <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }}">
                 @endif

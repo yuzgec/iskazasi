@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/frontend/vendor/owl.carousel/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="/frontend/vendor/owl.carousel/assets/owl.theme.default.min.css">
 <link rel="stylesheet" href="/frontend/vendor/magnific-popup/magnific-popup.min.css">
-<link rel="stylesheet" href="/frontend/css/theme.css?ver=4">
+<link rel="stylesheet" href="/frontend/css/theme.css?ver=6">
 <link rel="stylesheet" href="/frontend/css/theme-elements.css?ver=4">
 <link rel="stylesheet" href="/frontend/css/demos/demo-cleaning-services.css?ver=4">
 <link rel="stylesheet" href="/frontend/css/skins/skin-cleaning-services.css?ver=4">

@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ContactRequest;
 use App\Models\Blog;
 use App\Models\Form;
 use App\Models\Page;
-use App\Models\Service;
 use App\Models\Video;
-use Artesaos\SEOTools\Facades\SEOMeta;
+use App\Models\Service;
+use App\Models\Calculator;
+use App\Http\Requests\CalcRequest;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\ContactRequest;
+use Artesaos\SEOTools\Facades\SEOMeta;
 
 class HomeController extends Controller
 {
@@ -21,10 +24,55 @@ class HomeController extends Controller
 
     }
 
-    public function reference(){
+    public function calc(){
+        $sehir = DB::table('sehir')->get();
+        SEOMeta::setTitle('İş Kazası Tazminat Hesaplama | Ölümlü Yaralanmalı İş Kazası Geçirdim ');
+        return view('frontend.page.calc', compact('sehir'));
+    }
 
-        SEOMeta::setTitle('Referanslarıımız | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
-        return view('frontend.page.reference');
+    public function calcpost(CalcRequest $request){
+
+        $name = $request->input('name');
+        $phone = $request->input('phone');
+        $mesaage = $request->input('message');
+        $age = $request->input('age');
+        $city = $request->input('city');
+        $fault_rate = $request->input('fault_rate');
+        $disability = $request->input('disability');
+        $gender = $request->input('gender');
+        $income = $request->input('income');
+    
+        // Basit tazminat hesaplama mantığı (örnek)
+        
+        $base_tazminat = (config('settings.rate') ? config('settings.rate') : 100000); // Örnek baz tazminat miktarı
+
+        $fault_deduction = $base_tazminat * ($fault_rate / 100);
+        $disability_compensation = $base_tazminat * ($disability / 100);
+    
+        // Yaş ve cinsiyet faktörleri (örnek)
+        $age_factor = ($age < 40) ? 1.2 : (($age < 50) ? 1.1 : 1.0);
+        $gender_factor = ($gender == 'kadin') ? 1.1 : 1.0;
+    
+        // Nihai tazminat hesaplaması
+        $final_tazminat = ($disability_compensation - $fault_deduction) * $age_factor * $gender_factor;
+
+    
+        $new = new Calculator;
+        $new->name = $name;
+        $new->phone = $phone;
+        $new->income = $income;
+        $new->age = $age;
+        $new->fault_rate = $fault_rate;
+        $new->disability = $disability;
+        $new->gender = $gender;
+        $new->city = $city;
+        $new->message = $mesaage;
+        $new->final = $final_tazminat;
+        $new->save();
+        //dd($final_tazminat);
+
+        return redirect()->route('');
+
     }
 
     public function faq(){

@@ -1468,7 +1468,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	#header .header-nav-main nav > ul > li {
 		height: 100%;
 		align-self: stretch;
-		margin-left: 2px;
+		margin-left: -10px;
 	}
 
 	#header .header-nav-main nav > ul > li > a {

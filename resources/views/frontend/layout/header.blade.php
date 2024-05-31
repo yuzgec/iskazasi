@@ -30,6 +30,7 @@
                                             </ul>
                                         </li>
 
+                                        <li><a href="{{ route('calc') }}" class="nav-link active">Tazminat Hesaplama</a></li>
                                         <li><a href="{{ route('blog') }}" class="nav-link">Makaleler</a></li>
                                         <li><a href="{{ route('faq') }}" class="nav-link">S.S.S.</a></li>
                                         <li><a href="{{ route('contactus') }}" class="nav-link">İletişim</a></li>

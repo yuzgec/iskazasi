@@ -18,6 +18,8 @@ Route::get('/video-galeri', [HomeController::class, 'video'])->name('video');
 Route::get('/referanslarimiz', [HomeController::class, 'reference'])->name('reference');
 Route::get('/sss', [HomeController::class, 'faq'])->name('faq');
 Route::get('/ekibimiz', [HomeController::class, 'team'])->name('team');
+Route::get('/is-kazasi-tazminat-hesaplama', [HomeController::class, 'calc'])->name('calc');
+Route::post('/calcpost',[HomeController::class, 'calcpost'])->name('calcpost');
 Route::post('/form', [HomeController::class, 'form'])->name('form');
 
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
