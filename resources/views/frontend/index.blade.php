@@ -72,15 +72,7 @@
                         <p class="custom-font-secondary text-4 pb-1 mb-4">Aşağıdaki formu kullanarak bize hızlı bir şekilde email gönderebilirsiniz.</p>
                         <form class="contact-form custom-form-style-1" action="{{ route('form') }}" method="POST">
                             @csrf
-                            <div class="contact-form-success alert alert-success d-none mt-4">
-                                <strong>Success!</strong> Your request has been sent to us.
-                            </div>
-
-                            <div class="contact-form-error alert alert-danger d-none mt-4">
-                                <strong>Error!</strong> There was an error sending your request.
-                                <span class="mail-error-message text-1 d-block"></span>
-                            </div>
-
+                           
                             <div class="row">
                                 <div class="form-group col pb-1 mb-3">
                                     <input type="text" value="{{ old('name') }}"  class="form-control" name="name" placeholder="Adınız Soyadınız">
@@ -92,9 +84,14 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="form-group col pb-1 mb-3">
+                                    <input type="email" value="{{ old('email') }}"  class="form-control" name="email" placeholder="Email Adresiniz">
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="form-group col">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" name="agree" id="tabContent9Checkbox" data-msg-required="You must agree before submiting.">
+                                        <input class="form-check-input" type="checkbox" value="" name="agree" checked>
                                         <label class="form-check-label" for="tabContent9Checkbox">
                                             <a class="text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#aydinlatmametni">Aydınlatma Metni</a> Okudum Kabul Ediyorum.
                                         </label>
@@ -351,11 +348,13 @@
                         İş kazaları, çalışanların sağlığını ve güvenliğini tehlikeye atan istenmeyen olaylardır. Bu tür kazalar, ciddi yaralanmalara, kalıcı sakatlıklara ve hatta ölümlere neden olabilir.
                     </p>
 
-                    <div class="accordion custom-accordion-style-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" id="accordion1">
+                    <div class="accordion accordion-modern-status accordion-modern-status-primary" data-appear-animation="fadeInUpShorter"
+                     data-appear-animation-delay="1600" id="accordion1">
                         <div class="card card-default">
                             <div class="card-header" id="collapse1HeadingOne">
                                 <h4 class="card-title m-0">
-                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1One" aria-expanded="false" aria-controls="collapse1One">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse1One" aria-expanded="true" aria-controls="collapse1One">
                                         İş kazası nedir?
                                     </a>
                                 </h4>
@@ -456,94 +455,220 @@
                     <p class="mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
                         İş kazası avukatlarının gerçekleştirdiği temel işler ve görevler aşağıdaki başlıklar altında özetlenebilir:
                     </p>
-                 
-                        <ol style="background: white;margin:10px;">
-                            <div class="p-4">
-                         
-                                <li>
-                                    <p><strong>Danışmanlık ve Bilgilendirme:</strong></p>
 
+
+                    
+                    <div class="accordion custom-accordion-style-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" id="accordion1">
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingOne">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse111One" aria-expanded="true" aria-controls="collapse111One">
+                                        Danışmanlık ve Bilgilendirme
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse111One" class="collapse" aria-labelledby="collapse1HeadingOne" data-bs-parent="#accordion1">
+                                <div class="card-body">
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i> Müvekkilleri, iş kazaları ve ilgili hukuki süreçler hakkında bilgilendirme.</li>
                                         <li><i class="fas fa-check"></i> Haklar, yükümlülükler ve olası tazminatlar konusunda danışmanlık yapma.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Durum Değerlendirme ve Strateji Belirleme:</strong></p>
-
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingTwo">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse112Two" aria-expanded="false" aria-controls="collapse112Two">
+                                        Durum Değerlendirme ve Strateji Belirleme
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse112Two" class="collapse" aria-labelledby="collapse1HeadingTwo" data-bs-parent="#accordion1">
+                                <div class="card-body">
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>Kazanın detaylarını inceleme ve hukuki bir strateji belirleme.</li>
                                         <li><i class="fas fa-check"></i>Olası tazminat miktarını ve dava şansını değerlendirme.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Kaza Raporlaması ve Resmi İşlemler:</strong></p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingThree">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse113Three" aria-expanded="false" aria-controls="collapse113Three">
+                                        Kaza Raporlaması ve Resmi İşlemler
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse113Three" class="collapse" aria-labelledby="collapse1HeadingThree" data-bs-parent="#accordion1">
+                                <div class="card-body">
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>İş kazası raporlarının hazırlanması ve ilgili kurumlara sunulması.</li>
                                         <li><i class="fas fa-check"></i>Gerekli resmi başvuruların ve evrak işlerinin yönetimi.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Tazminat Talepleri ve Müzakereler:</strong></p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFour">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse114Four" aria-expanded="false" aria-controls="collapse114Four">
+                                    Tazminat Talepleri ve Müzakereler
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse114Four" class="collapse" aria-labelledby="collapse1HeadingFour" data-bs-parent="#accordion1">
+                                <div class="card-body">
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>İş kazası sonucunda hak edilen tazminatlar için taleplerde bulunma.</li>
                                         <li><i class="fas fa-check"></i>Sigorta şirketleri veya işverenlerle müzakereler yürütme.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Dava Takibi ve Temsil:</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFive">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1Five" aria-expanded="false" aria-controls="collapse1Five">
+                                        İş kazasını işverene bildirmeme ne kadar sürem var?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1Five" class="collapse" aria-labelledby="collapse1HeadingFive" data-bs-parent="#accordion1">
+                                <div class="card-body">
+                                    <p class="mb-0">
+                                        İş kazasını bildirme süresi ülkeden ülkeye değişir. Genellikle, kazanın hemen ardından veya en kısa sürede işverene bildirmek gerekmektedir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFive">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse115Six" aria-expanded="false" aria-controls="collapse115Six">
+                                        Dava Takibi ve Temsil
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse115Six" class="collapse" aria-labelledby="collapse1HeadingSix" data-bs-parent="#accordion1">
+                                <div class="card-body">
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>İş kazası davalarında müvekkili mahkemede temsil etme.</li>
                                         <li><i class="fas fa-check"></i>Davanın her aşamasında müvekkilleri temsil etmek ve savunmak.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Delil Toplama ve Analiz:</strong></p>
-
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFive">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse116Six" aria-expanded="false" aria-controls="collapse116Six">
+                                     Delil Toplama ve Analiz
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse116Six" class="collapse" aria-labelledby="collapse1HeadingSix" data-bs-parent="#accordion1">
+                                <div class="card-body">
+                                   
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>Kazayla ilgili delillerin toplanması ve analizi.</li>
                                         <li><i class="fas fa-check"></i>Tanık ifadeleri, medikal raporlar ve diğer kanıtların değerlendirilmesi.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Tıbbi ve Uzman Görüşlerinin Yönetimi:</strong></p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFive">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse117Six" aria-expanded="false" aria-controls="collapse117Six">
+                                     Tıbbi ve Uzman Görüşlerinin Yönetimi
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse117Six" class="collapse" aria-labelledby="collapse1HeadingSix" data-bs-parent="#accordion1">
+                                <div class="card-body">
+                                   
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>Tıbbi uzmanlarla iletişim kurma ve gerekli raporları almak.</li>
                                         <li><i class="fas fa-check"></i>Hukuki süreçte kullanılmak üzere uzman görüşleri ve değerlendirmelerini sağlama.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Anlaşmalar ve Uzlaşmalar:</strong></p>
+                                </div>
+                            </div>
+                        </div>
 
+                        
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFive">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse118Six" aria-expanded="false" aria-controls="collapse118Six">
+                                     Anlaşmalar ve Uzlaşmalar                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse118Six" class="collapse" aria-labelledby="collapse1HeadingSix" data-bs-parent="#accordion1">
+                                <div class="card-body">
+                                  
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>Dava dışı çözümler ve uzlaşmalar için müzakereler yapma.</li>
                                         <li><i class="fas fa-check"></i>Müvekkilin çıkarlarını en iyi şekilde temsil etmek için anlaşmalara varılmasını sağlama.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Hukuki Güncellemeler ve Takip:</strong></p>
+                                </div>
+                            </div>
+                        </div>
 
+                         
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFive">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse119Six" aria-expanded="false" aria-controls="collapse119Six">
+                                     Hukuki Güncellemeler ve Takip
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse119Six" class="collapse" aria-labelledby="collapse1HeadingSix" data-bs-parent="#accordion1">
+                                <div class="card-body">
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>İlgili hukuki gelişmeleri ve güncellemeleri takip etme.</li>
                                         <li><i class="fas fa-check"></i>Müvekkilin durumuna ve hukuki çerçeveye uygun hareket etme.</li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <p><strong>Psikolojik ve Sosyal Destek Yönlendirmesi:</strong></p>
+                                </div>
+                            </div>
+                        </div>
 
+
+                           
+                        <div class="card card-default">
+                            <div class="card-header" id="collapse1HeadingFive">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse"
+                                     data-bs-target="#collapse120Six" aria-expanded="false" aria-controls="collapse120Six">
+                                     Psikolojik ve Sosyal Destek Yönlendirmesi                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse120Six" class="collapse" aria-labelledby="collapse1HeadingSix" data-bs-parent="#accordion1">
+                                <div class="card-body">
+                                   
                                     <ul class="list list-icons list-primary list-borders">
                                         <li><i class="fas fa-check"></i>İş kazası sonrası yaşanan zorluklarla başa çıkma konusunda müvekkile destek ve rehberlik sağlama.</li>
                                         <li><i class="fas fa-check"></i>Gerekirse psikolojik veya sosyal destek hizmetlerine yönlendirme.</li>
                                     </ul>
-                                </li>
-                            <div>
-                        </ol>
-             
-
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

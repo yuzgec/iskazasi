@@ -16,9 +16,20 @@
                             <div class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
-                                        <li><a href="{{ route('home') }}" class="nav-link active">Anasayfa</a></li>
+                                        <li><a href="{{ route('home') }}" class="nav-link">Anasayfa</a></li>
                                         <li><a href="{{ route('corporatedetail', 'hakkimizda') }}" class="nav-link">Hakkımızda</a></li>
-                                        <li><a href="{{ route('servicedetail', 'is-kazasi-tazminati-alma') }}" class="nav-link">İş Kazası Tazminat Alma</a></li>
+                                        <li class="dropdown dropdown-primary"><a class="dropdown-toggle nav-link" href="#">Hizmetlerimiz<i class="fas fa-chevron-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                @foreach ($Service as $item)
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('servicedetail', $item->slug)}}" title="{{ $item->title}}">
+                                                        {{ $item->title}}
+                                                    </a>
+                                                </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+
                                         <li><a href="{{ route('blog') }}" class="nav-link">Makaleler</a></li>
                                         <li><a href="{{ route('faq') }}" class="nav-link">S.S.S.</a></li>
                                         <li><a href="{{ route('contactus') }}" class="nav-link">İletişim</a></li>

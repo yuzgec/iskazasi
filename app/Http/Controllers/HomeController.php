@@ -16,7 +16,7 @@ class HomeController extends Controller
 
     public function index(){
 
-        SEOMeta::setTitle('İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
+        SEOMeta::setTitle('İş Kazası Avukatı | İş Kazası Tazmınatı Hesaplama');
         return view('frontend.index');
 
     }
@@ -29,7 +29,7 @@ class HomeController extends Controller
 
     public function faq(){
 
-        SEOMeta::setTitle('Sıkça Sorulan Sorular | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
+        SEOMeta::setTitle('Sıkça Sorulan Sorular | İş Kazası Avukatı | İş Kazası Tazmınatı Hesaplama');
         return view('frontend.page.faq');
     }
 
@@ -42,20 +42,20 @@ class HomeController extends Controller
 
     public function contact(){
 
-        SEOMeta::setTitle('İletişim | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
+        SEOMeta::setTitle('İletişim | İş Kazası Avukatı |  İş Kazası Tazmınatı Hesaplama');
         return view('frontend.contact');
     }
 
     public function servicedetail($url){
         $Detail = Service::where('slug', $url)->firstOrFail();
 
-        SEOMeta::setTitle($Detail->title. ' | kazagecirdim.com.tr | Kaza Geçirdim');
+        SEOMeta::setTitle($Detail->title. ' | İş Kazası Tazmınatı Hesaplama | İş Kazası Geçirdim');
 
         return view('frontend.service.detail', compact('Detail'));
     }
 
     public function service(){
-        SEOMeta::setTitle('İş Kazası Avukatı ');
+        SEOMeta::setTitle('İş Kazası Avukatı | İş Kazası Tazmınatı Hesaplama | İş Kazası Geçirdim');
         SEOMeta::setDescription("İş Kazası Avukatı ");
 
         return view('frontend.service.index');
@@ -80,7 +80,7 @@ class HomeController extends Controller
 
     public function blog(){
 
-        SEOMeta::setTitle('Makaleler | İş Kazası Avukatı | kazagecirdim.com.tr | Kaza Geçirdim');
+        SEOMeta::setTitle('Makaleler | Ölümlü Yaralanmalı İş Kazası Avukatı');
 
         return view('frontend.blog.index');
     }

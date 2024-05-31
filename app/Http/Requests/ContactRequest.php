@@ -12,8 +12,7 @@ class ContactRequest extends FormRequest
         return [
             "name"                    => 'required|min:5|max:50',
             "email"                   => 'required|email',
-            "phone"                   => 'required',
-            "message"                 => 'required',
+            "phone"                   => 'required'        ,
         ];
     }
     public function messages()
@@ -25,7 +24,6 @@ class ContactRequest extends FormRequest
             'email.required'            => 'Email alanı alanı zorunludur.',
             'email.email'               => 'Geçerli bir email adresi yazınız.',
             'phone.required'            => 'Telefon alanı zorunludur.',
-            'message.required'          => 'Mesaj alanı zorunludur.',
         ];
     }
 
