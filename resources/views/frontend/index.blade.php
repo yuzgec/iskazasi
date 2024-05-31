@@ -162,7 +162,7 @@
                             <div class="card custom-card-style-1">
                                 <div class="card-body text-center py-5">
                                     
-                                    <h4 class="custom-card-style-1-title  font-weight-bold mb-2">{{$item->title}}</h4>
+                                    <h4 class="custom-card-style-1-title  font-weight-bold mb-2 text-4">{{$item->title}}</h4>
                                     <p class="custom-card-style-1-description">{{$item->short}} </p>
                                 </div>
                             </div>
