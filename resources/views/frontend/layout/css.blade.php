@@ -14,13 +14,13 @@
        <script> gtag('event', 'conversion', {'send_to': 'AW-969497658/5B5CCJDn_ZUYELq4pc4D'}); </script>
 
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{config('settings.googleTagManager')}}"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KRSV9JZ7"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', '{{config('settings.googleTagManager')}}');
+        gtag('config', 'GTM-KRSV9JZ7');
 
         </script>
 
@@ -38,7 +38,7 @@
        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <!-- End Google Tag Manager (noscript) -->
 
-
+       GTM-KRSV9JZ7
 
        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RL2BZLKH0"></script>
