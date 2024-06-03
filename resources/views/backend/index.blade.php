@@ -79,11 +79,12 @@
                 <tr>
                     <th>Adı</th>
                     <th>Telefon</th>
+                    <th>Yaş</th>
+                    <th>Cinsiyet</th>
                     <th>Şehir</th>
                     <th>Sakatlık</th>
                     <th>Kusur Oranı</th>
                     <th>Maaş</th>
-
                     <th>Tarih</th>
                     <th></th>
                 </tr>
@@ -93,6 +94,8 @@
                     <tr>
                         <td>{{ $item->name }}</td>
                         <td>{{ $item->phone }}</td>
+                        <td>{{$item->age}}</td>
+                        <td><span class="text-capitalize">{{$item->gender}}</span></td>
                         <td>{{ $item->city }}</td>
                         <td>{{ $item->disability }}</td>
                         <td>{{ $item->fault_rate }}</td>

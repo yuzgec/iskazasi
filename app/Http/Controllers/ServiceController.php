@@ -53,7 +53,7 @@ class ServiceController extends Controller
         $New->save();
 
         toast(SWEETALERT_MESSAGE_CREATE,'success');
-        return redirect()->route('service.index');
+        return redirect()->route('service.index',['category'=> $request->category, 'name' => $request->name]);
 
     }
 
@@ -105,7 +105,7 @@ class ServiceController extends Controller
         $Update->save();
 
         toast(SWEETALERT_MESSAGE_UPDATE,'success');
-        return redirect()->route('service.index');
+        return redirect()->route('service.index',['category'=> $request->category, 'name' => $request->name]);
 
     }
 

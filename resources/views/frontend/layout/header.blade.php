@@ -18,9 +18,21 @@
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li><a href="{{ route('home') }}" class="nav-link">Anasayfa</a></li>
                                         <li><a href="{{ route('corporatedetail', 'hakkimizda') }}" class="nav-link">Hakkımızda</a></li>
-                                        <li class="dropdown dropdown-primary"><a class="dropdown-toggle nav-link" href="#">Hizmetlerimiz<i class="fas fa-chevron-down"></i></a>
+                                        <li class="dropdown dropdown-primary"><a class="dropdown-toggle nav-link" href="#">İş Kazası<i class="fas fa-chevron-down"></i></a>
                                             <ul class="dropdown-menu">
-                                                @foreach ($Service as $item)
+                                                @foreach ($Service->where('category', 1) as $item)
+                                                <li>
+                                                    <a class="dropdown-item" href="{{ route('servicedetail', $item->slug)}}" title="{{ $item->title}}">
+                                                        {{ $item->title}}
+                                                    </a>
+                                                </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropdown-primary"><a class="dropdown-toggle nav-link" href="#">Trafik Kazası<i class="fas fa-chevron-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                @foreach ($Service->where('category', 2) as $item)
                                                 <li>
                                                     <a class="dropdown-item" href="{{ route('servicedetail', $item->slug)}}" title="{{ $item->title}}">
                                                         {{ $item->title}}
@@ -32,7 +44,6 @@
 
                                         <li><a href="{{ route('calc') }}" class="nav-link active">Tazminat Hesaplama</a></li>
                                         <li><a href="{{ route('blog') }}" class="nav-link">Makaleler</a></li>
-                                        <li><a href="{{ route('faq') }}" class="nav-link">S.S.S.</a></li>
                                         <li><a href="{{ route('contactus') }}" class="nav-link">İletişim</a></li>
                                     </ul>
 

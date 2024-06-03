@@ -4,6 +4,7 @@
     {{Form::model($Edit, ["route" => ["service.update", $Edit->id],'enctype' => 'multipart/form-data'])}}
     @method('PUT')
     <input type="hidden" value="{{ request('category') }}" name="category">
+    <input type="hidden" value="{{ request('name') }}" name="name">
     <div class="row">
         <div class="col-12 col-md-9">
 
