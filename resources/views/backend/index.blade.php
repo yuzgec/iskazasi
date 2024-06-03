@@ -37,49 +37,76 @@
 
 
 
-    <div class="col-12 col-md-9 mt-3">
+    <div class="col-12 col-md-12 mt-3">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">En Çok Bakılan Sayfalar</h3>
+                <h3 class="card-title">Form</h3>
             </div>
-            <table class="table card-table table-vcenter">
+            <table class="table card-table table-vcenter table-responsive">
                 <thead>
                 <tr>
-                    <th>Sayfa Adı</th>
-                    <th colspan="2">Ziyaret Sayısı</th>
+                    <th>Adı</th>
+                    <th>Telefon</th>
+                    <th>Email</th>
+                    <th>Konu</th>
+                    <th>Tarih</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
+                    @foreach ($form as $item)
                     <tr>
-                        <td>Hakkımızda</td>
-                        <td>3,550</td>
+                        <td>{{ $item->name }}</td>
+                        <td>{{ $item->phone }}</td>
+                        <td>{{ $item->email }}</td>
+                        <td>{{ $item->subject }}</td>
+                        <td>{{ $item->created_at }}</td>
+                        <td>Oku</td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
     </div>
 
-    <div class="col-12 col-md-3 mt-3">
+    <div class="col-12 col-md-12 mt-3">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Aranan Kelimeler</h3>
+                <h3 class="card-title">İş Kazası Tazminat Hesaplama</h3>
             </div>
-            <table class="table card-table table-vcenter">
+            <table class="table card-table table-vcenter table-responsive">
                 <thead>
                 <tr>
-                    <th>Aranan Kelime</th>
+                    <th>Adı</th>
+                    <th>Telefon</th>
+                    <th>Şehir</th>
+                    <th>Sakatlık</th>
+                    <th>Kusur Oranı</th>
+                    <th>Maaş</th>
+
+                    <th>Tarih</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($Search as $item)
-                <tr>
-                    <td>{{ $item->key }}</td>
-                </tr>
-                @endforeach
+                    @foreach ($calc as $item)
+                    <tr>
+                        <td>{{ $item->name }}</td>
+                        <td>{{ $item->phone }}</td>
+                        <td>{{ $item->city }}</td>
+                        <td>{{ $item->disability }}</td>
+                        <td>{{ $item->fault_rate }}</td>
+                        <td>{{ $item->income }}</td>
+                        <td>{{ $item->created_at }}</td>
+                        <td>Oku</td>
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
     </div>
+
+    
 
 @endsection
 
