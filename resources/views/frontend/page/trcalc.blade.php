@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row mt-3">
                 <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>- İŞ KAZASI TAZMİNAT HESAPLAMA</h1>
+                    <h1>- TRAFİK KAZASI TAZMİNAT HESAPLAMA</h1>
                     <span class="d-block text-4">İş Kazası Avukatı </span>
                 </div>
                 <div class="col-md-4 order-1 order-md-2 align-self-center">
@@ -39,7 +39,7 @@
                     <div class="row">
                         <div class="col">
                             <p>Bu form ve hesaplama kodu, kullanıcının yaş, kusur oranı, sakatlık oranı ve cinsiyet bilgilerini alarak basit bir tazminat hesaplaması yapar. Hesaplama modeli basit tutulmuştur ve gerçek hayatta daha karmaşık faktörler ve yasal gereksinimler dikkate alınmalıdır. </p>
-                              <form class="contact-form" action="{{ route('calcpost')}}" method="POST">
+                              <form class="contact-form" action="{{ route('trcalcpost')}}" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="form-group col-lg-6">

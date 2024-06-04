@@ -21,6 +21,13 @@ Route::get('/ekibimiz', [HomeController::class, 'team'])->name('team');
 Route::get('/is-kazasi-tazminat-hesaplama', [HomeController::class, 'calc'])->name('calc');
 Route::get('/is-kazasi-tazminat-hesaplama-sonuc', [HomeController::class, 'calcresult'])->name('calcresult');
 Route::post('/calcpost',[HomeController::class, 'calcpost'])->name('calcpost');
+
+
+Route::get('/trafik-kazasi-tazminat-hesaplama', [HomeController::class, 'trcalc'])->name('trcalc');
+Route::get('/trafik-kazasi-tazminat-hesaplama-sonuc', [HomeController::class, 'trcalcresult'])->name('trcalcresult');
+Route::post('/trcalcpost',[HomeController::class, 'trcalcpost'])->name('trcalcpost');
+
+
 Route::post('/form', [HomeController::class, 'form'])->name('form');
 
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {

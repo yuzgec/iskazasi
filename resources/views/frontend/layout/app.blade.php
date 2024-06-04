@@ -14,6 +14,8 @@
     <div class="body">
         @include('frontend.layout.header')
         <div role="main" class="main">
+            @include('backend.layout.alert')
+
             @yield('content')
             {{-- <a href="https://api.whatsapp.com/send?phone={{ config('settings.whatsapp') }}&text=Merhaba bilgi almak istiyorum." class="float" target="_blank" title="Whatsapp Bilgi Hattı">
                 <i class="fab fa-whatsapp my-float"></i>

@@ -72,7 +72,7 @@
                         <p class="custom-font-secondary text-4 pb-1 mb-4">Aşağıdaki formu kullanarak bize hızlı bir şekilde email gönderebilirsiniz.</p>
                         <form class="contact-form custom-form-style-1" action="{{ route('form') }}" method="POST">
                             @csrf
-                           
+                           <input type="hidden" name="subject" value="Anasayfa Form">
                             <div class="row">
                                 <div class="form-group col pb-1 mb-3">
                                     <input type="text" value="{{ old('name') }}"  class="form-control" name="name" placeholder="Adınız Soyadınız">

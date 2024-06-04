@@ -19,7 +19,7 @@ class HomeController extends Controller
 
     public function index(){
 
-        SEOMeta::setTitle('İş Kazası Avukatı | İş Kazası Tazmınatı Hesaplama');
+        SEOMeta::setTitle('İş Kazası Avukatı | İş Kazası Tazmınatı | Trafik Kazası Tazminat Hesaplama');
         return view('frontend.index');
 
     }
@@ -71,6 +71,8 @@ class HomeController extends Controller
         $new->save();
         //dd($final_tazminat);
         session()->put('calc_id', $new->id);
+        
+        alert()->success('Gönderildi','Mesajınız bize başarıyla ulaştı.');
 
         return redirect()->route('calcresult');
 
@@ -161,6 +163,7 @@ class HomeController extends Controller
             $message->to(config('settings.email1'))->subject($New->name.' - Site Bilgi Formu');
         });
 
+        alert()->success('Gönderildi','Mesajınız bize başarıyla ulaştı.');
         return redirect()->route('home');
     }
 
